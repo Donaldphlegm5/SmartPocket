@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Pocket</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Smart Pocket</h1>
+</header>
+
+<main>
+    <h2>Top Moving Cryptocurrencies</h2>
+    <button id="button1"> Bitcoin Details </button>
+    <button id="button2"> XRP Details </button>
+    <button id="button3"> Ethereum Details </button>
+    <div id="output"></div>
+</main>n
+
+<script>
+    var button1 = document.getElementById("button1");
+    var button2 = document.getElementById("button2");
+    var button3 = document.getElementById("button3");
+    var output = document.getElementById("output");
+
+    /* Add click event listeners to your buttons so you can interact with them. */
+    button1.addEventListener("click", clickButton1);
+    button2.addEventListener("click", clickButton2);
+    button3.addEventListener("click", clickButton3);
+
+    /* Write functions to handle displaying various content depending on which button you press. */
+    function clickButton1(event_) {
+        window.open("https://coinmarketcap.com/currencies/bitcoin/", "_blank");
+    }
+
+    function clickButton2(event_) {
+        window.open("https://coinmarketcap.com/currencies/xrp/", "_blank");
+    }
+
+    function clickButton3(event_) {
+        window.open("https://coinmarketcap.com/currencies/ethereum/", "_blank");
+    }
+</script>
+
+</body>
+</html>
+
+/* Written by Donald Phlegm II -- 05/01/2024*/
+/* Work in progress */
